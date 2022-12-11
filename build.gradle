@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'am.s_mukhamedzhanov.sd'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.11'
+}
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ["src/test/java"]
+        }
+    }
+}
+
+test {
+    useJUnit()
+}
